@@ -1,31 +1,57 @@
 .social-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    margin: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 120px;
 }
 
 .social-title {
-    font-family: Arial, sans-serif;
-    white-space: pre-line;
-    font-size: 40px;
-    line-height: 44px;
-    font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: bold;
 }
 
 .social-icons {
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .social-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+@media (width <= 999px) {
+  .social-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 120px;
+  }
+}
+
+@media (width <= 430px) {
+  .social-container {
+    flex-direction: column;
+    margin: 48px 0 15px;
+    gap: 40px;
+  }
+
+  .social-title {
+    font-size: 30px;
+    line-height: 33px;
+    margin: 0;
+  }
+
+  .social-icons__img-small {
+    width: 76.5px;
+    height: 76.5px;
+  }
 }
